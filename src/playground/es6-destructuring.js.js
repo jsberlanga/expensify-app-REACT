@@ -41,3 +41,10 @@ const item = ['Coffee (hot)', '$2.00', '$2.50', '$2.75'];
 
 const [drink, small, medium, large] = item;
 console.log(`A Medium ${drink} costs ${medium}`)
+
+
+const add = ({a, b}, c) => {
+  return a + b + c;
+}
+
+console.log(add({a: 1, b: 2}, 100))
