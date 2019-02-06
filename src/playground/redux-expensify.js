@@ -61,8 +61,6 @@ const setEndDate = (endDate) => ({
   endDate
 });
 
-
-
 store.subscribe(() => {
   const state = store.getState();
   const visibleExpenses = getVisibleExpenses(state.expenses, state.filters)
@@ -79,7 +77,7 @@ const expenseTwo = store.dispatch(addExpense({ description: 'Coffee', amount: 30
 // store.dispatch(setTextFilter('rent'));
 // store.dispatch(setTextFilter('happy'));
 
-store.dispatch(sortByAmount());
+// store.dispatch(sortByAmount());
 // store.dispatch(sortByDate());
 
 // store.dispatch(setStartDate(`${new Date().getDate()}/${new Date().getMonth() + 1}/${new Date().getFullYear()}`));
